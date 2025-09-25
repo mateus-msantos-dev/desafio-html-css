@@ -46,3 +46,46 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100vw; 
+}
+
+.nav_links {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+	font-size: 22px;
+}
+
+a{
+	text-decoration: none;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main p{
+	padding: 10px;
+	font-size: 18px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1b357e;
+	/* #1351d8 */
+}
+
+.imagem{
+	background-color: black;
+}
