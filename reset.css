@@ -147,3 +147,53 @@ footer a img{
 	text-decoration: none;
 	color: white;
 }
+
+/* CONTATO */
+
+#main_lancamento{
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10%;
+}
+
+.container_input{	
+	padding: 5px;
+}
+
+form h3{
+	margin-bottom: 7px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.container_input input{
+	padding: 18px;
+	border-radius: 10px;
+	border: 2px solid gray;
+	width: 350px;
+	font-size: 16px
+}
+
+#container_button{
+	display: flex;
+	justify-content: right;
+}
+
+#container_button button{
+	width: 60%;
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	background-color: #1351d8;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+#container_button button:hover{
+	background-color: #1b357e;
+	transition: 0.2s
+}
