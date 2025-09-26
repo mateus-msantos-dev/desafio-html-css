@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,6 +32,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -52,40 +58,92 @@ table {
     justify-content: space-between; 
     align-items: center; 
     width: 100vw; 
+	padding-bottom: 8px;
+}
+
+.img_logo{
+	width: 170px;
 }
 
 .nav_links {
     flex: 1;
     display: flex;
     justify-content: center; 
-    gap: 15px;
+    gap: 30px;
 	font-size: 22px;
+	padding-right: 170px;
 }
 
 a{
 	text-decoration: none;
 }
 
-main{
+#main_home{
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-main p{
+
+#img_principal{
+	width: 1600px;
+}
+
+#main_home p{
 	padding: 10px;
 	font-size: 18px;
 }
 
 footer{
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	background-color: #1b357e;
+	padding: 10px;
 	/* #1351d8 */
 }
 
-.imagem{
-	background-color: black;
+.topo_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container_redes_sociais{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 1px;
+}
+
+footer p{
+	color: white;
+	padding-right: 7px;
+}
+
+footer a img{
+	width: 30px;
+	
+}
+
+.img_logo_footer{
+	flex: 1;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding-right: 23px;
+}
+
+.container_copyright{
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.container_copyright a{
+	text-decoration: none;
+	color: white;
 }
