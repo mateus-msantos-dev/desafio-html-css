@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lançamento</title>
-    <link rel="stylesheet" href="reset.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lançamento</title>
+  <link rel="stylesheet" href="reset.css">
 </head>
+
 <body>
-    
-    <header>
-        <section class="cabecalho">
-            <img class="img_logo" src="img/logo-ford-256.png" alt="logo_ford">
-            <nav class="nav_links">
-                <a href="index.html">Home</a>
-                <a href="lancamento.html">Lançamento</a>
-                <a href="contato.html">Contato</a>
-            </nav>
-        </section>
-        <hr>
-    </header>
 
-    <main>
+  <header>
+    <section class="cabecalho">
+      <img class="img_logo" src="img/logo-ford-256.png" alt="logo_ford">
+      <nav class="nav_links">
+        <a href="index.html">Home</a>
+        <a href="lancamento.html">Lançamento</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </section>
+    <hr>
+  </header>
+
+  <main id="main_lancamento">
+    <iframe class="video_ford" width="95%" height="430" src="https://www.youtube.com/embed/vQsryuNmsL0" title="Ford Ranger 2022 | Gerações" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <table id="tabela_carros">
+      <tr class="card_carros">
+
+        <td>
+          <img src="img/XL Cabine.jpg" alt="XL Cabine">
+          <div class="card_meta">
+            <div class="row_nome_info">
+              <input type="checkbox" id="veiculo1" name="XL Cabine">
+              <span class="name">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
+              <button class="info_btn">
+                <img src="img/info.png" alt="info">
+              </button>
+            </div>
+            <span class="price">Preço Sugerido: R$ 183.850</span>
+          </div>
+        </td>
+
+        <td>
+          <img src="img/xls 2.2 diesel.jpg" alt="XLS 2.2">
+          <div class="card_meta">
+            <div class="row_nome_info">
+              <input type="checkbox" id="veiculo2" name="XLS 2.2">
+              <span class="name">XLS 2.2 Diesel 4X4 AT 2022</span>
+              <button class="info_btn">
+                <img src="img/info.png" alt="info">
+              </button>
+            </div>
+            <span class="price">Preço Sugerido: R$ 220.690</span>
+          </div>
+        </td>
+    
+        <td>
+          <img src="img/storm.jpg" alt="Storm">
+          <div class="card_meta">
+            <div class="row_nome_info">
+              <input type="checkbox" id="veiculo3" name="Storm">
+              <span class="name">Storm 3.2 Diesel 4X4 AT 2022</span>
+              <button class="info_btn">
+                <img src="img/info.png" alt="info">
+              </button>
+            </div>
+            <span class="price">Preço Sugerido: R$ 222.790</span>
+          </div>
+        </td>
+    
+      </tr>
+    </table>
+
+    <button id="botao_comprar" type="button">Comparar Carros</button>
+  </main>
+
+  <footer>
+    <div class="topo_footer">
+        <div class="container_redes_sociais">
+            <p>Redes Sociais</p>
+            <a href="https://www.facebook.com/FordBrasil/" target="_blank"><img src="img/facebook-50.png" alt="facebook_logo"></a>
+            <a href="https://www.instagram.com/fordbrasil/" target="_blank"><img src="img/instagram-logo-50.png" alt="instagram_logo"></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank"><img src="img/youtube-squared-50.png" alt="youtube_logo"></a>
+        </div>
         
-    </main>
+        <div class="copyright">
+            <a href="https://www.ford.com.br/copyright/" target="_blank">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</a>
+        </div>
 
-    <footer>
-        <div class="topo_footer">
-            <div class="container_redes_sociais">
-                <p>Redes Sociais</p>
-                <a href="https://www.facebook.com/FordBrasil/"><img src="img/facebook-50.png" alt="facebook_logo"></a>
-                <a href="https://www.instagram.com/fordbrasil/"><img src="img/instagram-logo-50.png" alt="instagram_logo"></a>
-                <a href="https://www.youtube.com/fordbrasil"><img src="img/youtube-squared-50.png" alt="youtube_logo"></a>
-            </div>
-    
-            <div class="img_logo_footer">
-                <img src="img/ford-96.png" alt="logo_ford">
-            </div>
+        <div class="img_logo_footer">
+            <img src="img/ford-96.png" alt="logo_ford">
         </div>
-    
-        <div class="container_copyright">
-            <a href="https://www.ford.com.br/copyright/">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</a>
-        </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
+
 </html>
