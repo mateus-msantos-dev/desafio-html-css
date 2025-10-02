@@ -1,0 +1,128 @@
+#main_lancamento{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.video_ford{
+	max-width: 90%; 
+	height: auto;
+}
+
+/* TABELA */
+#tabela_carros{
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+  
+.card_carros{
+	display: flex;          
+	gap: 40px;              
+	justify-content: center;
+}
+  
+.card_carros td{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;           
+	padding: 15px;
+}
+
+.card_carros td img:first-child{
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+  
+.card_meta{
+	margin-top: 10px;
+	width: 100%;
+}
+  
+.row_nome_info{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+  
+.row_nome_info input[type="checkbox"] {
+	transform: scale(1.4); 
+	cursor: pointer;
+}
+  
+.name{
+	flex: 1; 
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+  
+.info_btn{
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	width: 28px;
+	height: 28px;
+}
+  
+.info_btn img{
+	width: 100%;
+	height: auto;
+}
+  
+.price{
+	display: block;
+	margin-top: 6px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #666;
+	text-align: left;
+}
+
+#botao_comprar{
+	width: 250px;
+	margin: 11px 0px 15px 0px;
+	padding: 15px;
+	border: solid 0px;
+	border-radius: 10px;
+	background-color: #1351d8;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#botao_comprar:hover{
+	background-color: #1b357e;
+	transition: 0.2s;
+}
+
+/* RESPONSIVIDADE - LANÇAMENTO */
+
+@media (min-width: 1200px){
+    .card_carros td{
+        width: 320px;
+    }
+}
+
+@media (max-width: 1069px){
+    .card_carros{
+        flex-wrap: wrap; 
+    }
+}
+
+@media (max-width: 768px){
+    .card_carros td {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px){
+    .card_carros td{
+        width: 90%;
+        max-width: 300px;
+    }
+}

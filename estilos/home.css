@@ -1,0 +1,38 @@
+#main_home{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#img_principal{
+	width: 85vw;
+    min-height: 200px;
+    object-fit: cover;
+}
+
+#main_home p{
+	padding: 10px;
+	font-size: 18px;
+}
+
+/* RESPONSIVIDADE - HOME */
+
+@media (min-width: 1200px){
+    #img_principal{
+        width: 70vw;
+    }
+}
+
+@media (max-width: 1069px){
+    #img_principal{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 480px){
+    #img_principal{
+        width: 100%;
+    }
+}
