@@ -26,7 +26,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -64,7 +63,7 @@ table {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    width: 100vw; 
+    width: 100%; 
 	padding-bottom: 8px;
 }
 
@@ -96,6 +95,8 @@ a{
 
 #img_principal{
 	width: 85vw;
+    min-height: 200px;
+    object-fit: cover;
 }
 
 #main_home p{
@@ -118,12 +119,11 @@ footer{
     width: 100%;
 }
 
-/* Redes sociais à esquerda */
 .container_redes_sociais{
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	gap: 1px;
+	gap: 1px; 
 }
 
 footer p{
@@ -135,7 +135,6 @@ footer a img{
 	width: 30px;
 }
 
-/* Copyright centralizado */
 .copyright{
     flex: 1;
     text-align: center;
@@ -146,7 +145,6 @@ footer a img{
 	font-size: 14px;
 }
 
-/* Logo à direita */
 .img_logo_footer{
 	display: flex;
 	align-items: center;
@@ -167,86 +165,84 @@ footer a img{
 	align-items: center;
 }
 
-/* ====== TABELA ====== */
-#tabela_carros {
+.video_ford{
+	max-width: 90%; 
+	height: auto;
+}
+
+/* TABELA */
+#tabela_carros{
 	border-collapse: collapse;
 	margin-top: 30px;
-  }
+}
   
-  .card_carros {
-	display: flex;          /* transforma a linha da tabela em um flex container */
-	gap: 40px;              /* espaçamento entre os cards */
+.card_carros{
+	display: flex;          
+	gap: 40px;              
 	justify-content: center;
-  }
+}
   
-  .card_carros td {
+.card_carros td{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 300px;           /* largura fixa para uniformizar os cards */
+	width: 300px;           
 	padding: 15px;
-  }
-  
-  /* Imagem do carro */
-  .card_carros td img:first-child {
+}
+
+.card_carros td img:first-child{
 	width: 100%;
 	height: auto;
 	border-radius: 8px;
-  }
+}
   
-  /* Container do texto + checkbox + botão info */
-  .card_meta {
+.card_meta{
 	margin-top: 10px;
 	width: 100%;
-  }
+}
   
-  /* Linha: checkbox + nome + botão info */
-  .row_nome_info {
+.row_nome_info{
 	display: flex;
 	align-items: center;
 	gap: 8px;
-  }
+}
   
-  /* Checkbox maior */
-  .row_nome_info input[type="checkbox"] {
-	transform: scale(1.4); /* aumenta tamanho */
+.row_nome_info input[type="checkbox"] {
+	transform: scale(1.4); 
 	cursor: pointer;
-  }
+}
   
-  /* Nome do carro */
-  .name {
-	flex: 1; /* ocupa o espaço disponível */
+.name{
+	flex: 1; 
 	font-size: 14px;
 	font-weight: bold;
 	color: #333;
-  }
+}
   
-  /* Botão info */
-  .info_btn {
+.info_btn{
 	background: none;
 	border: none;
 	padding: 0;
 	cursor: pointer;
 	width: 28px;
 	height: 28px;
-  }
+}
   
-  .info_btn img {
+.info_btn img{
 	width: 100%;
 	height: auto;
-  }
+}
   
-  /* Preço */
-  .price {
+.price{
 	display: block;
 	margin-top: 6px;
 	font-size: 13px;
 	font-weight: normal;
 	color: #666;
 	text-align: left;
-  }
+}
 
-  #botao_comprar{
+#botao_comprar{
 	width: 250px;
 	margin: 11px 0px 15px 0px;
 	padding: 15px;
@@ -256,7 +252,7 @@ footer a img{
 	color: white;
 	cursor: pointer;
 	font-size: 16px;
-  }
+}
 
 /* CONTATO */
 
@@ -265,7 +261,19 @@ footer a img{
 	flex: 1;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 10%;
+	padding: 2% 0% 5% 0%;
+}
+
+#img_carro_xls{
+    display: block;
+    margin-right: 0; 
+}
+
+#img_carro_xls img{
+    width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    margin-right: 30px;
 }
 
 .container_input{	
@@ -284,6 +292,17 @@ form h3{
 	border: 2px solid gray;
 	width: 350px;
 	font-size: 16px
+}
+
+.container_input textarea {
+	padding: 18px;
+	border-radius: 16px;
+	border: 2px solid gray;
+	width: 350px; 
+	font-size: 16px;
+    height: 150px; 
+    resize: vertical; 
+    font-family: "Roboto", sans-serif; 
 }
 
 .container_input select{
@@ -321,4 +340,142 @@ input[type=number]::-webkit-inner-spin-button {
 #container_button button:hover{
 	background-color: #1b357e;
 	transition: 0.2s
+}
+
+/*Responsividade*/
+
+@media (min-width: 1200px){
+    #img_principal{
+        width: 70vw;
+    }
+    .card_carros td{
+        width: 320px;
+    }
+    /* Contato */
+    #img_carro_xls img{
+        width: 300px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1024px){
+    .nav_links{
+        font-size: 18px;
+        gap: 20px;
+        padding-right: 0; 
+    }
+
+    #img_principal{
+        width: 90vw;
+    }
+
+    .card_carros{
+        flex-wrap: wrap; 
+    }
+    
+    /* Contato */
+    #img_carro_xls img{
+        width: 250px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    /* Header */
+    .cabecalho{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_links{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+        padding: 0;
+    }
+    
+    /* Lançamento */
+    .card_carros td {
+        width: 300px;
+    }
+
+    /* Contato */
+    #main_contato {
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    
+    #img_carro_xls {
+        margin-bottom: 20px;
+    }
+
+    #img_carro_xls img{
+        width: 90%; 
+        max-width: 400px; 
+        margin-right: 0;
+    }
+
+    form{
+        width: 90%; 
+    }
+
+    .container_input input,
+	.container_input select,
+	.container_input textarea { /* ADICIONADO textarea */
+    width: 100%;
+    box-sizing: border-box;
+}
+    
+    #container_button button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .img_logo{
+        width: 120px;
+    }
+
+    #img_principal{
+        width: 100%;
+    }
+    
+    .copyright a{
+        font-size: 12px;
+    }
+
+    /* Lançamento */
+    .card_carros td{
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    /* Contato */
+    form{
+        width: 95%; 
+    }
+    
+    #img_carro_xls img{
+        width: 100%; 
+    }
+}
+
+@media (max-width: 390px){
+    /* Footer */
+    .container_redes_sociais{
+        justify-content: flex-start;
+    }
+
+    footer p{
+        padding-right: 0; 
+        margin-right: 5px; 
+    }
+    
+    footer a img{
+        width: 25px; 
+    }
+    
+    .img_logo_footer{
+        padding-right: 10px;
+    }
 }
