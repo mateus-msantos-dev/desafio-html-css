@@ -8,7 +8,6 @@
 
 .video_ford{
 	max-width: 90%; 
-	height: auto;
 }
 
 /* TABELA */
@@ -98,6 +97,7 @@
 #botao_comprar:hover{
 	background-color: #1b357e;
 	transition: 0.2s;
+	transform: scale(1.1);
 }
 
 /* RESPONSIVIDADE - LANÇAMENTO */

@@ -81,7 +81,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 #container_button button:hover{
 	background-color: #1b357e;
-	transition: 0.2s
+	transition: 0.2s;
+    transform: scale(1.1);
 }
 
 /* RESPONSIVIDADE - CONTATO */
